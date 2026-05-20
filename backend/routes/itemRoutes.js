@@ -1,0 +1,1 @@
+const express = require('express'); const { getItems, addItem, deleteItem, toggleItem } = require('../controllers/itemController'); const router = express.Router(); router.get('/', getItems); router.post('/', addItem); router.delete('/:id', deleteItem); router.patch('/:id/toggle', toggleItem); module.exports = router;
